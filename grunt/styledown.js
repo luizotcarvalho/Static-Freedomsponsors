@@ -3,11 +3,10 @@ module.exports = function(grunt, options){
     return {
         build: {
             files: {
-                'dist/styleguide/index.html': ['app/styleguide/*.md']
+                'dist/styleguide/index.html': ['app/scss/**/*.scss']
             },
             options: {
-                css: 'dist/css/freedomsponsors.css',
-                js: 'dist/js/main.js',
+                css: '/css/freedomsponsors.css',
                 title: 'Styleguide Freedomsponsors'
             }
         }

@@ -5,13 +5,13 @@ module.exports = function(grunt, options){
             includePaths: [
                 'bower_components/foundation/scss'
             ],
-            outputStyle: 'expanded',
             sourceMap: true
         },
         all: {
             files: {
                 'dist/css/freedomsponsors.css': 'app/scss/freedomsponsors.scss'
-            }
+            },
+            outputStyle: 'expanded'
         }
     };
 };

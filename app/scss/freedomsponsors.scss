@@ -6,7 +6,9 @@ author: Horacio Herrera
 */
 
 
-@import "normalize.scss";
-@import "foundation.scss";
+@import "normalize";
+@import "foundation";
+
+@import "module/modules";
 
 

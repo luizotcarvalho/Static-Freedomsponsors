@@ -1,9 +1,5 @@
 module.exports = function(grunt, options){
     return {
-        vendor: {
-            files: [
-                {expand: true, src: ['bower_components/*'], dest: 'dist/vendor', filter: 'isFile'},
-            ]
-        }
+        js: {expand: true, cwd: 'app/js', src: ['**/*[.js,.html]'], dest: 'dist/js'},
     };
 };

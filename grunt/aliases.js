@@ -4,11 +4,14 @@ module.exports = function (grunt, options) {
         server: [
             'clean',
             'sass',
-            'copy:vendor',
+            'copy:js',
+            'jade',
+            'bower',
+            'tags',
             'styledown',
-            'connect:dev',
+            'connect:livereload',
             'open',
-            // 'watch'
+            'watch'
         ],
 
         build: [
