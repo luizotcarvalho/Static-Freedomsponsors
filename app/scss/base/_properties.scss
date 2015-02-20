@@ -1,0 +1,29 @@
+.p-float-left {
+    float: left;
+}
+
+.p-float-right {
+    float: right;
+}
+
+@each $spacing in $spacings {
+    $i: 1;
+
+    .p-padding-#{$i} {
+        padding: $spacing;
+    }
+    .p-padding-left-#{$i} {
+        padding: $spacing;
+    }
+    .p-padding-right-#{$i} {
+        padding: $spacing;
+    }
+    .p-padding-bottom-#{$i} {
+        padding: $spacing;
+    }
+    .p-padding-top-#{$i} {
+        padding: $spacing;
+    }
+
+    $i: $i + 1;
+}
