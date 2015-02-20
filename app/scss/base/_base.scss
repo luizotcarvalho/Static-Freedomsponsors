@@ -1,6 +1,9 @@
-/*
--------------------
-BASE SASS FILE
-author: Horacio Herrera
--------------------
-*/
+body {
+    font-family: "Lato", sans-serif;
+    color: $color-gray-dark;
+    font-size: 14px;
+}
+
+li {
+    list-style: none;
+}

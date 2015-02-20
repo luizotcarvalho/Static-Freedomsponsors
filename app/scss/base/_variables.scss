@@ -1,6 +1,35 @@
-/*
--------------------
-BASE SASS FILE
-author: Horacio Herrera
--------------------
-*/
+// typo
+$font-size-small: 12px;
+$font-size-regular: 16px;
+$font-size-big: 18px;
+$font-size-extra-big: 36px;
+
+// spacing
+$spacing-1: 8px;
+$spacing-2: 16px;
+$spacing-3: 24px;
+$spacing-4: 32px;
+
+$spacings: $spacing-1, $spacing-2, $spacing-3, $spacing-4;
+
+// colors
+$color-blue-dark: #2c3e50;
+$color-blue-regular: #2980b9;
+$color-blue-light: #3498db;
+
+$color-green-dark: #16a085;
+$color-green-regular: #27ae60;
+$color-green-light: #2ecc71;
+
+$color-red-regular: #c0392b;
+$color-red-light: #e74c3c;
+
+$color-gray-dark: #7f8c8d;
+$color-gray-regular: #95a5a6;
+$color-gray-light: #bdc3c7;
+$color-gray-extra-light: #ecf0f1;
+
+$color-white: #fff;
+
+// borders
+$border-radius: 4px;

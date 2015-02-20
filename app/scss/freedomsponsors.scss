@@ -1,14 +1,10 @@
-/*
--------------------
-BASE SASS FILE
-author: Horacio Herrera
--------------------
-*/
-
-
 @import "normalize";
 @import "foundation";
 
-@import "module/modules";
+@import "base/variables";
+@import "base/base";
+@import "base/properties";
+
+@import "module/taskbar";
 
 
