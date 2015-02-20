@@ -16,7 +16,7 @@ Pra fazer esse trem funcionar você vai precisar de:
 1 copo de `bower install`
 
 
-E para servir, user `grunt server`.
+E para servir, use `grunt server`.
 
 ==============
 
