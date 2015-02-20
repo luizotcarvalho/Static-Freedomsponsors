@@ -21,7 +21,7 @@ module.exports = function(grunt, options){
         },
         directives: {
             files: ['app/js/**/*.jade'],
-            tasks: ['newer:jade:directives'],
+            tasks: ['newer:jade:directives', 'styledown'],
             options: {
                 nospawn: true
             }
@@ -29,6 +29,13 @@ module.exports = function(grunt, options){
         templates: {
             files: ['app/templates/**/*.jade'],
             tasks: ['newer:jade:templates'],
+            options: {
+                nospawn: true
+            }
+        },
+        svg: {
+            files: ['app/svg/**/*.svg'],
+            tasks: ['newer:copy:svg'],
             options: {
                 nospawn: true
             }

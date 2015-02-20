@@ -3,7 +3,7 @@ module.exports = function(grunt, options){
     return {
         options: {
             includePaths: [
-                'bower_components/foundation/scss'
+                'bower_components/compass-mixins/lib'
             ],
             sourceMap: true
         },

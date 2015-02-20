@@ -1,10 +1,8 @@
-@import "normalize";
-@import "foundation";
-
 @import "base/variables";
 @import "base/base";
 @import "base/properties";
 
+@import "module/buttons";
 @import "module/taskbar";
 
 @import "layout/layouts";

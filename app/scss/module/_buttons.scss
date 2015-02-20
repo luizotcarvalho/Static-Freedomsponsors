@@ -1,0 +1,105 @@
+/**
+ * Buttons:
+ * `.btn` - documentation on what your
+ * component is goes here. Markdown is encouraged.
+ *
+ *     @example
+ *     p Types
+ *     a.btn Action
+ *     a.btn.btn-success Success
+ *     a.btn.btn-danger Danger
+ *     a.btn.btn-cancel Cancel
+ *
+ *     p Sizes
+ *     a.btn.btn-small Small
+ *     a.btn Regular
+ *     a.btn.btn-large Large
+ *     a.btn.btn-extra-large Extra Large
+ *
+ *     p States
+ *     a.btn Hover
+ *     a.btn.active Active
+ *     a.btn.disabled Disabled
+ *
+ *     a.btn.btn-success Hover
+ *     a.btn.btn-success.active Active
+ *     a.btn.btn-success.disabled Disabled
+ *
+ *     a.btn.btn-danger Hover
+ *     a.btn.btn-danger.active Active
+ *     a.btn.btn-danger.disabled Disabled
+ *
+ *     a.btn.btn-cancel Hover
+ *     a.btn.btn-cancel.active Active
+ *     a.btn.btn-cancel.disabled Disabled
+ */
+
+@mixin btn($color, $shadow, $font-color: null){
+    background-color: $color;
+    border-top: 2px solid lighten($color, 10);
+    border-bottom: 2px solid $shadow;
+    @if $font-color {
+        color: $font-color;
+    }
+    &:hover,
+    &.hover {
+        background-color: darken($color, 10);
+        border-top-color: $color;
+        border-bottom-color: darken($shadow, 10);
+    }
+    &:active,
+    &.active {
+        outline: 2px solid lighten($color, 15);
+    }
+    &.disabled,
+    &[disabled] {
+        // @include opacity(.7);
+        border-top-color: $color;
+        border-bottom-color: $color;
+        text-shadow: none;
+        cursor: not-allowed;
+        pointer-events: none;
+    }
+}
+
+.btn {
+    // @include user-select(none);
+    float: left;
+    margin: 0 $spacing-1;
+    border-radius: $border-radius;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+
+    // default size
+    padding: ($spacing-2/2) $spacing-2;
+    font-size: $spacing-2;
+
+    // default color
+    @include btn($color-blue-light, $color-blue-regular, $color-white);
+}
+
+.btn-success {
+    @include btn($color-green-light, $color-green-regular);
+}
+
+.btn-danger {
+    @include btn($color-red-light, $color-red-regular);
+}
+
+.btn-cancel {
+    @include btn($color-gray-extra-light, $color-gray-light, $color-red-light);
+}
+
+.btn-small {
+    font-size: $font-size-small;
+    padding: ($spacing-1/2) $spacing-1;
+}
+
+.btn-large {
+    font-size: $font-size-large;
+    padding: ($spacing-3/2) $spacing-3;
+}
+
+.btn-extra-large {
+    font-size: $font-size-extra-large;
+    padding: ($spacing-4/2) $spacing-4;
+}

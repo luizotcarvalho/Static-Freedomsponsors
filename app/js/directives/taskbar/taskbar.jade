@@ -1,20 +1,22 @@
 nav.taskbar
-    a.taskbar-logo.p-float-left(href='/') FredomSponsors
+    .taskbar-container
+        a.taskbar-logo.p-float-left(href='/')
+            img(src='svg/logo.svg')
 
-    ul.taskbar-main-menu.p-float-left
-        li
-            a.taskbar-main-menu-item(href='/search') Issue
-        li
-            a.taskbar-main-menu-item(href='/project') Projects
-        li
-            a.taskbar-main-menu-item(href='/about') About
-        li
-            a.taskbar-main-menu-item(href='/faq') Help
+        ul.taskbar-main-menu.p-float-left
+            li
+                a.taskbar-main-menu-item(href='/search') Issues
+            li
+                a.taskbar-main-menu-item(href='/project') Projects
+            li
+                a.taskbar-main-menu-item(href='/about') About
+            li
+                a.taskbar-main-menu-item(href='/faq') Help
 
-    //input(type='text' placeholder='Search issue name, project or URL')
+        //input(type='text' placeholder='Search issue name, project or URL')
 
-    ul.taskbar-login-menu.p-float-right
-        li
-            a Login
-        li
-            a.btn Sign Up
+        ul.taskbar-login-menu.p-float-right
+            li
+                a Login
+            li
+                a.btn Sign Up

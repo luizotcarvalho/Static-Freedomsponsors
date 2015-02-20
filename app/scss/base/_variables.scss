@@ -1,18 +1,44 @@
 // typo
 $font-size-small: 12px;
 $font-size-regular: 16px;
-$font-size-big: 18px;
-$font-size-extra-big: 36px;
+$font-size-large: 18px;
+$font-size-extra-large: 36px;
 
 // spacing
 $spacing-1: 8px;
 $spacing-2: 16px;
 $spacing-3: 24px;
 $spacing-4: 32px;
+$spacing-5: 40px;
+$spacing-6: 48px;
 
-$spacings: $spacing-1, $spacing-2, $spacing-3, $spacing-4;
+$spacings: $spacing-1, $spacing-2, $spacing-3, $spacing-4, $spacing-5, $spacing-6;
 
-// colors
+// reponsive
+$repsonsive-max-width: 1000px;
+
+/**
+ * Colors:
+ * Available colors.
+ *
+ *     @example
+ *     div(style='background: #2c3e50; width: 100px; height: 100px; float: left')
+ *     div(style='background: #2980b9; width: 100px; height: 100px; float: left')
+ *     div(style='background: #3498db; width: 100px; height: 100px; float: left')
+ *
+ *     div(style='background: #16a085; width: 100px; height: 100px; float: left')
+ *     div(style='background: #27ae60; width: 100px; height: 100px; float: left')
+ *     div(style='background: #2ecc71; width: 100px; height: 100px; float: left')
+ *
+ *     div(style='background: #c0392b; width: 100px; height: 100px; float: left')
+ *     div(style='background: #e74c3c; width: 100px; height: 100px; float: left')
+ *
+ *     div(style='background: #7f8c8d; width: 100px; height: 100px; float: left')
+ *     div(style='background: #95a5a6; width: 100px; height: 100px; float: left')
+ *     div(style='background: #bdc3c7; width: 100px; height: 100px; float: left')
+ *     div(style='background: #ecf0f1; width: 100px; height: 100px; float: left')
+ */
+
 $color-blue-dark: #2c3e50;
 $color-blue-regular: #2980b9;
 $color-blue-light: #3498db;

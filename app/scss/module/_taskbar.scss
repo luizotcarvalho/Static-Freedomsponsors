@@ -1,3 +1,12 @@
+/**
+ * Taskbar:
+ * `.taskbar` - documentation on what your
+ * component is goes here. Markdown is encouraged.
+ *
+ *     @example
+ *     include app/js/directives/taskbar/taskbar.jade
+ */
+
 $taskbar-height: 70px;
 
 .taskbar {
@@ -6,8 +15,14 @@ $taskbar-height: 70px;
     background-color: $color-white;
     box-shadow: 0 2px 6px rgba(0, 0, 0, .15);
 
+    .taskbar-container {
+        max-width: $repsonsive-max-width;
+        margin: 0 auto;
+    }
+
     .taskbar-logo {
-        margin: 0 $spacing-4;
+        margin-right: $spacing-4;
+        width: 200px;
     }
 
     .taskbar-main-menu {

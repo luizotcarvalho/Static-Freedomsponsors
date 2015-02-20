@@ -5,6 +5,7 @@ module.exports = function (grunt, options) {
             'clean',
             'sass',
             'copy:js',
+            'copy:svg',
             'jade',
             'bower',
             'tags',
