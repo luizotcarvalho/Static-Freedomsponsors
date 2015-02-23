@@ -13,22 +13,26 @@ module.exports = function(grunt, options){
             }
         },
         js: {
-            files: ['app/js/**/[*.js]'],
-            tasks: ['newer:copy:js', 'tags'],
-            options: {
-                nospawn: true
-            }
+            files: ['app/js/**/*.js'],
+            tasks: ['newer:copy:js', 'tags']
         },
         directives: {
-            files: ['app/js/**/*.jade'],
-            tasks: ['newer:jade:directives', 'styledown'],
+            files: ['app/js/**/*.html'],
+            tasks: ['newer:copy:directives', 'styledown'],
             options: {
                 nospawn: true
             }
         },
         templates: {
-            files: ['app/templates/**/*.jade'],
-            tasks: ['newer:jade:templates'],
+            files: ['app/templates/**/*.html'],
+            tasks: ['newer:copy:templates', 'tags'],
+            options: {
+                nospawn: true
+            }
+        },
+        views: {
+            files: ['app/views/**/*.html'],
+            tasks: ['newer:copy:views'],
             options: {
                 nospawn: true
             }
@@ -36,6 +40,20 @@ module.exports = function(grunt, options){
         svg: {
             files: ['app/svg/**/*.svg'],
             tasks: ['newer:copy:svg'],
+            options: {
+                nospawn: true
+            }
+        },
+        img: {
+            files: ['app/img/**/*.*'],
+            tasks: ['newer:copy:img'],
+            options: {
+                nospawn: true
+            }
+        },
+        bower: {
+            files: ['bower_components/**/*'],
+            tasks: ['bower'],
             options: {
                 nospawn: true
             }

@@ -7,6 +7,7 @@ module.exports = function(grunt, options){
             },
             options: {
                 css: '/css/freedomsponsors.css',
+                // js: '/js/app.js',
                 title: 'Styleguide Freedomsponsors'
             }
         }

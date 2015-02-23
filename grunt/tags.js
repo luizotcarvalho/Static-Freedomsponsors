@@ -9,6 +9,8 @@ module.exports = function(grunt, options){
             },
             src: [
                 'app/js/plugins.js',
+                'app/js/plugins/**/*.js',
+                'app/js/get-shit-done.js',
                 'app/js/app.js',
                 'app/js/**/*.js'
             ],

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class='no-js lt-ie9 lt-ie8 lt-ie7'> <![endif]-->
+<!--[if IE 7]>         <html class='no-js lt-ie9 lt-ie8'> <![endif]-->
+<!--[if IE 8]>         <html class='no-js lt-ie9'> <![endif]-->
+<!--[if gt IE 8]><!--> <html class='no-js'> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Freedomsponsors</title>
+
+    <link rel="icon" type="image/png" href="/img/favicon.ico">
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="/vendors/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/freedomsponsors.css">
+
+    <script src="vendors/modernizr.js"></script>
+</head>
+
+<body ng-app="freedomsponsors">
+
+    <main class="home" ng-controller="homeCtrl">
+        <navbar></navbar>
+
+        <div class="wrapper">
+            <ng-view></ng-view>
+        </div>
+    </main>
+
+    <footer class="footer">
+            <div class="container">
+                <nav class="pull-left">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Help
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                               Blog
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="social-area pull-right">
+                    <a class="btn btn-social btn-facebook btn-simple">
+                        <i class="fa fa-facebook-square"></i>
+                    </a>
+                    <a class="btn btn-social btn-twitter btn-simple">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a class="btn btn-social btn-google-plus btn-simple">
+                        <i class="fa fa-google-plus"></i>
+                    </a>
+                </div>
+                <div class="copyright">
+                    &copy; 2015 FreedomSponsors, made with love <i class="fa fa-heart text-danger"></i>
+                </div>
+            </div>
+        </footer>
+
+    <!--build:js js/vendors.js-->
+    <script src="vendors/dist/jquery.js"></script>
+    <script src="vendors/dist/js/bootstrap.js"></script>
+    <script src="vendors/dist/js/bootstrap-select.js"></script>
+    <script src="vendors/angular.js"></script>
+    <script src="vendors/angular-route.js"></script>
+    <script src="vendors/angular-resource.js"></script>
+    <!--endbuild-->
+
+    <!--build:js js/app.js-->
+    <!--app tags-->
+    <!--end app tags-->
+    <!--endbuild-->
+
+    <script type="text/javascript">
+        var big_image;
+        $().ready(function(){
+            responsive = $(window).width();
+
+            if (responsive >= 768){
+                big_image = $('.parallax-image').find('img');
+
+                $(window).on('scroll',function(){
+                    parallax();
+                });
+            }
+
+        });
+
+       var parallax = function() {
+            var current_scroll = $(this).scrollTop();
+
+            oVal = ($(window).scrollTop() / 3);
+            big_image.css('top',oVal);
+        };
+    </script>
+
+    <script>
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'PUT-YOUR-GA-CODE']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+
+</body>
+
