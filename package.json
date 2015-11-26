@@ -24,6 +24,7 @@
     "grunt-styledown": "0.0.2",
     "load-grunt-config": "^0.16.0",
     "load-grunt-tasks": "^3.1.0",
+    "node-sass": "^3.4.2",
     "time-grunt": "^1.0.0"
   }
 }
