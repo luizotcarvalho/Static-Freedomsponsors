@@ -19,7 +19,7 @@
     "grunt-contrib-watch": "^0.6.1",
     "grunt-newer": "^1.1.0",
     "grunt-open": "^0.2.3",
-    "grunt-sass": "^0.18.0",
+    "grunt-sass": "^1.1.0",
     "grunt-script-link-tags": "^1.0.2",
     "grunt-styledown": "0.0.2",
     "load-grunt-config": "^0.16.0",
